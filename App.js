@@ -36,7 +36,6 @@ export default function App() {
       .then(res => res.json())
       .then(data => {
         setWeatherData(data);
-        console.log(data);
         setLoading(false);
       });
   };
@@ -161,7 +160,7 @@ export default function App() {
                       {' '}
                       {weatherdata.wind.speed}
                     </Text>
-                    <Text style={styles.infotext}>km/h</Text>
+                    <Text style={styles.infotext}>m/s</Text>
                   </View>
                   <View
                     style={{
